@@ -5,26 +5,63 @@
     <script
       id="cookieyes"
       type="text/javascript"
-      src="https://cdn-cookieyes.com/client_data/6b69650a431ff8da34a8f451/script.js"
+      src="https://cdn-cookieyes.com/client_data/946f7d9b38bf7b18ccd99df4/script.js"
     ></script>
     <!-- End cookieyes banner -->
+
+    <!-- custom code -->
+    <!-- <script>
+      var checktimeout = 0;
+      window.addEventListener("load", function () {
+        waitForElement(".cky-opt-out-checkbox", function () {
+          const checkbox = document.querySelector(".cky-opt-out-checkbox");
+          checkbox.addEventListener("change", function () {
+            if (checkbox.checked) {
+              document.getElementById("ckyCCPAOptOut").checked = true;
+              performBannerAction();
+            } else {
+              document.getElementById("ckyCCPAOptOut").checked = false;
+              performBannerAction();
+            }
+          });
+        });
+      });
+
+      function waitForElement(selector, callback) {
+        const element = document.querySelector(selector);
+        if (element) return callback();
+        checktimeout++;
+        if (checktimeout < 120) {
+          setTimeout(function () {
+            waitForElement(selector, callback);
+          }, 500);
+        }
+      }
+    </script> -->
+
+    <!--  -->
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test site</title>
   </head>
+  <style>
+    /* Style for the white rectangular box */
+    .container {
+      background-color: white;
+      /* width: 200px; */
+      padding: 20px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+
+    /* Style for the checkbox */
+    .checkbox {
+      margin-top: 10px;
+    }
+  </style>
   <body>
-    <h1>Cookieyes Test</h1>
-    <div class="cky-audit-table-element"></div>
-    <div class="cky-audit-table-element"></div>
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/nYEoxne_20Y?si=nDnb-fKaC6SVSAlw"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    ></iframe>
+    <h2>Cookieyes Test</h2>
   </body>
 </html>
